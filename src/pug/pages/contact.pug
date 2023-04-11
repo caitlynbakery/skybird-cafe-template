@@ -1,11 +1,13 @@
 extends ../layouts/LayoutTheme
 include ../mixins/pages/Contact.pug
 
+
 block beforeMainContent
   +FancyNav
   
 prepend scripts
-  script(src!=`https://maps.googleapis.com/maps/api/js?key=${APIGmap}&callback=initMap` async)
+  - const mapKey = 'AIzaSyAbVAL0cIflTu7AgqklbaWacRPBx7tfsD0'
+  script(src!=`https://maps.googleapis.com/maps/api/js?key=${mapKey}&callback=initMap` async)
 
 append mainContent  
   +Contact

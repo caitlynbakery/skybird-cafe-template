@@ -31,7 +31,7 @@ mixin FancyNav(params={})
   } data-zanim-trigger='scroll' data-exclusive=`${notExclusive || true}` class=`${navClass || ''}`)
     .fancynavbar-togglerbar(class=cls)&attributes(attributes)
       a(href=`${CWD}index.html`).fancynavbar-brand
-        img(src=`${CWD}assets/img/logo-sparrow-invert.svg` alt='' width=30 height=30 data-zanim-lg!={
+        img(src=`${CWD}assets/img/skybird/sun.png` alt='' width=30 height=30 data-zanim-lg!={
           from: {opacity: 0, x: 45},
           to: {opacity: 1, x: 0},
           ease: 'CubicBezier',
@@ -68,9 +68,9 @@ mixin FancyNav(params={})
           span.fab.fa-twitter
         a(href='#languageModal', data-bs-toggle='modal').fancynavbar-addon-item
           span.font-sans-serif.ls.fw-black.fs--1.d-block EN
-        if item
-          a(href=item[2] class=item[0]).fancynavbar-addon-item
-            span(class=item[1])
+        //- if item
+        //-   a(href=item[2] class=item[0]).fancynavbar-addon-item
+        //-     span(class=item[1])
 
     .fancynavbar-collapse
       if !menu
@@ -130,7 +130,9 @@ mixin FancyNav(params={})
                 .col-auto
                   each item in sitemap.pages
                     +NavLink(item, 'pages/')      
-
+          li.fancynav-item
+            a(href=`${CWD}pages/menu.html`).fancynav-link
+              span.fancynav-link-content menu
          
           li.fancynav-item
             a(href=`${CWD}pages/contact.html`).fancynav-link
