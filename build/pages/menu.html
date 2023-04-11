@@ -25,7 +25,7 @@
     <!-- ===============================================-->
     <!--    Stylesheets-->
     <!-- ===============================================-->
-    <link href="../vendors/prism/prism.css" rel="stylesheet">
+    <link href="../vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="../vendors/loaders.css/loaders.min.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=PT+Mono%7cPT+Serif:400,400i%7cLato:100,300,400,700,800,900" rel="stylesheet">
@@ -36,7 +36,7 @@
   <body class="overflow-hidden-x">
 
     <nav class="fancynavbar fancynavbar-expand-lg" data-zanim-lg='{"from":{"opacity":1,"x":70},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.3}' data-zanim-xs='{"from":{"opacity":1,"y":-37},"to":{"opacity":1,"y":0},"ease":"CubicBezier","duration":0.8,"delay":0.3}' data-zanim-trigger="scroll" data-exclusive="true">
-      <div class="fancynavbar-togglerbar"><a class="fancynavbar-brand" href="../index.html"><img class="fancynavbar-brand-img" src="../assets/img/logo-sparrow-invert.svg" alt="" width="30" height="30" data-zanim-lg='{"from":{"opacity":0,"x":45},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.4}' data-zanim-trigger="scroll" />
+      <div class="fancynavbar-togglerbar" data-onscroll-fade-in="data-onscroll-fade-in"><a class="fancynavbar-brand" href="../index.html"><img class="fancynavbar-brand-img" src="../assets/img/skybird/sun.png" alt="" width="30" height="30" data-zanim-lg='{"from":{"opacity":0,"x":45},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.4}' data-zanim-trigger="scroll" />
           <!--You can use icon or text logo as well-->
           <!--<span class='fab fa-superpowers fs-3'></span>-->
           <!--<span class='logo-sparrow'>S</span>-->
@@ -58,6 +58,7 @@
               </div>
             </div>
           </li>
+          <li class="fancynav-item"><a class="fancynav-link" href="../pages/menu.html"><span class="fancynav-link-content">menu</span></a></li>
           <li class="fancynav-item"><a class="fancynav-link" href="../pages/contact.html"><span class="fancynav-link-content">contact</span></a></li>
         </ul>
       </div>
@@ -86,12 +87,22 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="bg-light pt-8 pb-7 pt-lg-6 pb-lg-5 pt-xl-8 pb-xl-7">
+      <section class="py-0" id="page-shop" data-zanim-xs='{"delay":0.4,"animation":"zoom-out"}' data-zanim-trigger="scroll">
+        <div class="bg-holder" style="background-image:url(../assets/img/skybird/food-background.png);"></div>
+        <!--/.bg-holder-->
         <div class="container">
           <div class="row">
-            <div class="col-lg-6 col-xl-5">
-              <h1 class="fs-3 fs-sm-4">Getting Started</h1>
-              <p class="lead">Head start your stylish website with a gorgeous template</p>
+            <div class="col-9 pt-11 pb-5">
+              <div class="d-flex"><span class="fas fa-seedling text-white fs-6"></span>
+                <div class="flex-1 ps-3">
+                  <div class="overflow-hidden">
+                    <h2 class="fs-4 text-white display-4 font-base" data-zanim-xs='{"delay":0.6}' data-zanim-trigger="scroll"><span class="fst-italic">our menu</span></h2>
+                  </div>
+                  <div class="overflow-hidden">
+                    <h6 class="mb-0 text-white ls-2 text-uppercase" data-zanim-xs='{"delay":0.8}' data-zanim-trigger="scroll">A wide selection of food items for you to choose</h6>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div><!-- end of .container-->
@@ -102,40 +113,118 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="py-0 bg-white">
+      <section>
         <div class="container">
-          <div class="row justify-content-between">
-            <div class="col d-none d-lg-block">
-              <div class="position-sticky top-0 py-6">
-                <ul class="components-nav list-unstyled" id="components-nav"></ul>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="py-9 h-100 position-relative overflow-hidden">
+                <div class="bg-holder rounded " style="background-image:url(../assets/img/necklace-01.jpg);">
+                  <div class="yt-video" data-youtube-embed='{"videoId":"tJlzIJaokVY","startSeconds":3,"endSeconds":89}'></div>
+                </div>
+                <!--/.bg-holder-->
               </div>
             </div>
-            <div class="col-lg-10 py-6">
-              <h3 class="mt-n5" data-anchor="data-anchor">Quick start</h3>
-              <p>Looking to start your project quickly? Just unzip the <code>Sparrow-v2.1.1.zip</code>. We have precompiled and packaged everything in the <code>public</code> directory for you. Start editing the <code>pages/starter.html</code> with a text or code editor, save it, and open the file in your favourite browser to see the changes.</p>
-              <h3 class="pt-5" data-anchor="data-anchor">Setting up Build system</h3>
-              <p>Unzip the <code>Sparrow-v2.1.1.zip</code> to any folder and open a command line or terminal at that location.
-                Sparrow's dev tools require <a href="https://nodejs.org/en/" target="_blank">Node</a> and <a href="https://git-scm.com/" target="_blank">Git</a> . If you do not have them in your machine, please install their latest stable version from their corresponding website. As you have <span class="fw-black text-black">Node and Git installed and accessible from your terminal or command line</span>, install <a href="https://gulpjs.com/" target="_blank">Gulp CLI</a> package
-                globally with the following command:</p><pre><code class="lang-html">npm i gulp-cli -g
-</code></pre>
-              <p class="mt-4">When you’re done, install the rest of the sparrow’s dependencies with:</p><pre><code class="lang-html">npm i
-</code></pre>
-              <p class="mt-4">Now run:</p><pre><code class="lang-html">gulp
-</code></pre>
-              <p class="mt-4">Running gulp will compile the SCSS, transpile the javascript, copy all required libraries form <code>node_modules</code> to the corresponding <code>public/assets/vendors </code> directory and will open a browser window to <code>public/index.html</code></p>
-              <p>All of the following folders are monitored for changes, which will tell the browser to reload automatically after any changes are made:</p><pre class="scrollbar mt-2"><code class="language-html">public/assets/video/
-public/assets/img/
-public/vendors
-src/pug/
-src/scss/
-src/js/</code></pre>
-              <p class="mt-4">Now you can edit any <code>pug</code> file from <code>src/pug</code>, change SCSS variable with <code>scss/_user-variables.scss</code>, or write your own SCSS code in <code>scss/_user.scss</code> and add or update <code>javaScript</code> from <code>src/js</code> directory.</p>
-              <div class="alert alert-warning">Running the <code>gulp</code> command will discard and regenerate all the files in following directories:</div><pre class="scrollbar mt-2"><code class="language-html">public/**/*.html
- public/assets/css/
- public/assets/js/
- public/vendors</code></pre>
-              <p class="mt-4">Hit <code>Ctrl+C</code> or just close the command line window to stop the server.</p>
-              <p>Happy editing!</p>
+            <div class="col-lg-6 ps-lg-4 ps-xl-6 mt-4 mt-lg-0">
+              <div class="font-sans-serif fs-1 mb-2"><span class="text-warning fw-black">$27.50</span></div><a class="text-black" href="../pages/product-single.html">
+                <h3 class="mb-0">Scialatielli</h3>
+              </a>
+              <p class="lead font-sans-serif">Homecrafted pasta with rosemary, olive oil, porcini, &amp; grana padano</p>
+              <ul class="list-unstyled mt-4">
+                <li>
+                  <h6 class="fs-0 text-900 mb-1"><span class="fw-bold">Brand Name:</span><span class="fw-normal ps-1">Queen Brilliance</span></h6>
+                </li>
+                <li>
+                  <h6 class="fs-0 text-900 mb-1"><span class="fw-bold">Fine or Fashion:</span><span class="fw-normal ps-1">Fine</span></h6>
+                </li>
+                <li>
+                  <h6 class="fs-0 text-900 mb-1"><span class="fw-bold">Material:</span><span class="fw-normal ps-1">Yellow Gold</span></h6>
+                </li>
+                <li>
+                  <h6 class="fs-0 text-900 mb-1"><span class="fw-bold">Main Stone:</span><span class="fw-normal ps-1">Diamond</span></h6>
+                </li>
+                <li>
+                  <h6 class="fs-0 text-900 mb-1"><span class="fw-bold">Item Type:</span><span class="fw-normal ps-1">Pendants</span></h6>
+                </li>
+                <li>
+                  <h6 class="fs-0 text-900 mb-1"><span class="fw-bold">Metal Stamp:</span><span class="fw-normal ps-1">18k</span></h6>
+                </li>
+              </ul><a class="btn btn-dark btn-sm px-7 mt-4" href="cart.html">add to cart</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 mt-8"><img class="h-lg-100 w-100 rounded fit-cover" src="../assets/img/shop-1.jpg" alt="" /></div>
+            <div class="col-lg-6 ps-lg-4 ps-xl-6 mt-4 mt-lg-8">
+              <div class="badge border border-warning text-warning mb-2 font-sans-serif"><span class="fas fa-star me-1"></span>Best Seller</div>
+              <h6 class="mb-1 text-500"><del>US $17.28.00 / piece</del></h6>
+              <div class="font-sans-serif fs-1 mb-2"><span class="text-warning fw-black">US $8.81</span><span class="fs-0">/ piece<span class="badge badge-danger ms-2">-49%</span></span></div><a class="text-black" href="../pages/product-single.html">
+                <h3 class="mb-0">Rainbow White Mystic Crystal Zircon</h3>
+              </a>
+              <p class="lead font-sans-serif">Sterling Silver Woman Ring Size 6 7 8 9 10 F617 Fashion Wholesale Jewelry Free Shipping</p>
+              <ul class="list-unstyled mt-4">
+                <li>
+                  <h6 class="fs-0 text-900 mb-1"><span class="fw-bold">Material:</span><span class="fw-normal ps-1">Crystal</span></h6>
+                </li>
+                <li>
+                  <h6 class="fs-0 text-900 mb-1"><span class="fw-bold">Main Stone:</span><span class="fw-normal ps-1">Without</span></h6>
+                </li>
+                <li>
+                  <h6 class="fs-0 text-900 mb-1"><span class="fw-bold">Item Type:</span><span class="fw-normal ps-1">Rings</span></h6>
+                </li>
+                <li>
+                  <h6 class="fs-0 text-900 mb-1"><span class="fw-bold">Bracelets or Bangles Type:</span><span class="fw-normal ps-1">Chain &amp; Link Bracelets</span></h6>
+                </li>
+                <li>
+                  <h6 class="fs-0 text-900 mb-1"><span class="fw-bold">Surface Width:</span><span class="fw-normal ps-1">6mm</span></h6>
+                </li>
+                <li>
+                  <h6 class="fs-0 text-900 mb-1"><span class="fw-bold">Occasion:</span><span class="fw-normal ps-1">Party, Wedding, Activity</span></h6>
+                </li>
+                <li>
+                  <h6 class="fs-0 text-900 mb-1"><span class="fw-bold">Gender:</span><span class="fw-normal ps-1">Children's,Men's,Unisex,Women's</span></h6>
+                </li>
+              </ul><a class="btn btn-dark btn-sm px-7 mt-4" href="../pages/cart.html">add to cart</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 mt-8">
+              <div class="swiper-container theme-slider swiper-theme h-100" data-swiper='{"autoplay":{"delay":5000,"disableOnInteraction":false},"loop":true,"effect":"fade","pagination":{"el":".swiper-pagination","clickable":true,"type":"bullets"}}' data-zanim-lg='{"animation":"zoom-out","delay":0}' data-zanim-trigger="scroll">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide overflow-hidden rounded"><img class="w-100 h-100 fit-cover" src="../assets/img/watch-02.jpg" alt="" /></div>
+                  <div class="swiper-slide overflow-hidden rounded"><img class="w-100 h-100 fit-cover" src="../assets/img/watch-01.jpg" alt="" /></div>
+                  <div class="swiper-slide overflow-hidden rounded"> <img class="w-100 h-100 fit-cover" src="../assets/img/watch-03.jpg" alt="" /></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-nav">
+                  <div class="swiper-button-next me-md-3"></div>
+                  <div class="swiper-button-prev ms-md-3"> </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 ps-lg-4 ps-xl-6 mt-4 mt-lg-8">
+              <div class="font-sans-serif fs-1 mb-2"><span class="text-warning fw-black">US $21.59</span><span class="fs-0">/ piece</span></div><a class="text-black" href="../pages/product-single.html">
+                <h3 class="mb-0">New Sparrow Mens Watches</h3>
+              </a>
+              <p class="lead font-sans-serif">High quality Colored Geneva Silicone Rubber Jelly Gel Quartz Analog Sports Wrist Watch</p>
+              <ul class="list-unstyled mt-4">
+                <li>
+                  <h6 class="fs-0 text-900 mb-1"><span class="fw-bold">Dial Diameter:</span><span class="fw-normal ps-1">45.5mm</span></h6>
+                </li>
+                <li>
+                  <h6 class="fs-0 text-900 mb-1"><span class="fw-bold">Clasp Type:</span><span class="fw-normal ps-1">Buckle</span></h6>
+                </li>
+                <li>
+                  <h6 class="fs-0 text-900 mb-1"><span class="fw-bold">Water Resistance Depth:</span><span class="fw-normal ps-1">3Bar</span></h6>
+                </li>
+                <li>
+                  <h6 class="fs-0 text-900 mb-1"><span class="fw-bold">Boxes &amp; Cases Material:</span><span class="fw-normal ps-1">Paper</span></h6>
+                </li>
+                <li>
+                  <h6 class="fs-0 text-900 mb-1"><span class="fw-bold">Band Width:</span><span class="fw-normal ps-1">24mm</span></h6>
+                </li>
+                <li>
+                  <h6 class="fs-0 text-900 mb-1"><span class="fw-bold">Type:</span><span class="fw-normal ps-1">Children's,Men's,Unisex,Women's</span></h6>
+                </li>
+              </ul><a class="btn btn-dark btn-sm px-7 mt-4" href="../pages/cart.html">add to cart</a>
             </div>
           </div>
         </div><!-- end of .container-->
@@ -193,7 +282,7 @@ src/js/</code></pre>
     <script src="../vendors/bootstrap/bootstrap.min.js"></script>
     <script src="../vendors/anchorjs/anchor.min.js"></script>
     <script src="../vendors/is/is.min.js"></script>
-    <script src="../vendors/prism/prism.js"></script>
+    <script src="../vendors/swiper/swiper-bundle.min.js"></script>
     <script src="../vendors/fontawesome/all.min.js"></script>
     <script src="../vendors/lodash/lodash.min.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
