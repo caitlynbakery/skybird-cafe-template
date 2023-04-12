@@ -20,10 +20,10 @@ mixin ShopItems
       .col-lg-6
         .py-9.h-100.position-relative.overflow-hidden 
           +Background({
-            image: `${CWD}assets/img/necklace-01.jpg`,
+            image: `${CWD}assets/img/skybird/pasta.jpeg`,
             youtube: {
               videoId : 'tJlzIJaokVY',
-              startSeconds : 3,
+              startSeconds : 6,
               endSeconds : 89 
             },
             className: 'rounded '
@@ -32,8 +32,7 @@ mixin ShopItems
       .col-lg-6.ps-lg-4.ps-xl-6.mt-4.mt-lg-0
         //- h6.mb-1.text-500
         //-   del US $398.00 / piece
-        .font-sans-serif.fs-1.mb-2
-          span.text-warning.fw-black $27.50
+     
           //- span.fs-0 / piece
           //-   span.badge.bg-danger.ms-2 -5%
         a(href=`${CWD}pages/product-single.html`).text-black
@@ -42,29 +41,22 @@ mixin ShopItems
         ul.list-unstyled.mt-4
           li
             h6.fs-0.text-900.mb-1
-              span.fw-bold Brand Name:
-              span.fw-normal.ps-1 Queen Brilliance
+              span.fw-bold Origin:
+              span.fw-normal.ps-1 Italy
           li
             h6.fs-0.text-900.mb-1
-              span.fw-bold Fine or Fashion:
-              span.fw-normal.ps-1 Fine
+              span.fw-bold Category:
+              span.fw-normal.ps-1 Ribbon Pasta
           li
             h6.fs-0.text-900.mb-1
-              span.fw-bold Material:
-              span.fw-normal.ps-1 Yellow Gold
+              span.fw-bold Region:
+              span.fw-normal.ps-1 Amalfi Coast
           li
             h6.fs-0.text-900.mb-1
-              span.fw-bold Main Stone:
-              span.fw-normal.ps-1 Diamond
-          li
-            h6.fs-0.text-900.mb-1
-              span.fw-bold Item Type:
-              span.fw-normal.ps-1 Pendants
-          li
-            h6.fs-0.text-900.mb-1
-              span.fw-bold Metal Stamp:
-              span.fw-normal.ps-1 18k
-        a(href='cart.html').btn.btn-dark.btn-sm.px-7.mt-4 add to cart
+              span.fw-bold Created by:
+              span.fw-normal.ps-1 Chef Enrico Cosentino
+        .font-sans-serif.fs-1.mb-2
+          span.text-warning.fw-black $27.50
 
     .row
       .col-lg-6.mt-8
